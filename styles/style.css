@@ -1,0 +1,158 @@
+/* General resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    font-family:'Times New Roman', Times, serif;
+    height: 100%;
+  }
+  
+  /* Style for a fixed header */
+  header {
+    position: fixed; /* Fixed header at top edge of screen */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    line-height: 60px;
+    font-size: 30px;
+    z-index: 100;
+  }
+  
+  /* Spacing to push content below the header */
+  .content {
+    margin-top: 60px; /* Same height as header */
+  }
+  
+  /* Full-height sections for the long scrolling effect */
+  section {
+    height: 100vh; /* Full viewport height (vh) */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    z-index: 2;
+  }
+  
+  /* Different background content for each section */
+  #section1 {
+    background-color: #00d9ff;
+  }
+  
+  #section2 {
+    background-color: #ff5500;
+  }
+  
+  #section3 {
+    background-color: #a6ff00;
+  }
+  
+  #section4 {
+    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+  }
+  
+  #section5 {
+    background-image: url(../images/wallpaper.jpg);
+  }
+  
+  #section6 {
+    background-color: rgba(0, 0, 0, 1);
+  }
+  
+  #pre-order {
+    background-color: rgb(128, 128, 128);
+  }
+  
+  .left-aligned-text {
+    text-align: justify;
+  }
+  
+  /* Smooth scroll behavior */
+  html {
+    scroll-behavior: smooth; /* smooth - gradual scrolling or auto - instant scrolling */
+  }
+  
+  /* Navigation links in header */
+  nav a { /* nav selector targeting all <a> elements (anchor tags) within a <nav> element */
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  nav a:hover { /* :hover pseudo-class allows <nav> element to change when hovered */
+    text-decoration: underline;
+  }
+  
+  .back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #aa00ff;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 20px;
+    display: none;
+    z-index: 3;
+  }
+  
+  .back-to-top:hover { /* Hover is a pseudo-class */
+    background-color: #ff00ee;
+  }
+  
+  /* Show button when user scrolls past section 1 */
+  body.scrolled .back-to-top {
+    display: block;
+  }
+  
+  .video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    padding: 0 30px;
+    z-index: 1;
+  }
+  
+  .video video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    color: white;
+  }
+  
+  .overlay-text {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: #ffffff00;
+    color: #fff;
+  }
+  
+  /* Footer */
+  footer {
+    height: 100px;
+    background-color: #222;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
